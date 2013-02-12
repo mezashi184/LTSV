@@ -2,5 +2,5 @@
 
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyCopyright("Copyright (c) 2013 Nobuyoshi Tachibana.")]
+[assembly: AssemblyCopyright("Public Domain")]
 
