@@ -5,13 +5,13 @@
 	using LTSV
 
 ### parse line
-	Record record = Parser.Line("host:127.0.0.1\tident:-\tuser:frank");
+	Record record = Parse.Line("host:127.0.0.1\tident:-\tuser:frank");
 	Console.WriteLine(record["host"]); // "127.0.0.1"
 	Console.WriteLine(record["ident"]); // "-"
 	Console.WriteLine(record["user"]); // "frank"
 
 ### parse file
-	IEnumerable<Record> records = Parser.Line("host:127.0.0.1\tident:-\tuser:frank");
+	IEnumerable<Record> records = Parse.Line("host:127.0.0.1\tident:-\tuser:frank");
 	foreach (Record record in records)
 	{
 		Console.WriteLine(record); // "host:127.0.0.1\tident:-\tuser:frank"
