@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>10.0.0</ProductVersion>
+    <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{3DCD16B5-EFB6-4127-BC78-B0262514373B}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -39,9 +39,13 @@
       <Link>Version.cs</Link>
     </Compile>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="Build.cs" />
+    <Compile Include="ConvertFunc.cs" />
+    <Compile Include="Deserialize.cs" />
     <Compile Include="Record.cs" />
     <Compile Include="LineParser.cs" />
-    <Compile Include="Parser.cs" />
+    <Compile Include="Parse.cs" />
+    <Compile Include="Serialize.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

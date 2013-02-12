@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,11 +5,12 @@ namespace LTSV
 {
 	public class Record
 	{
-		public Record ()
-		{
-		}
-		Dictionary<string,string> dic_ = new Dictionary<string, string>();
+	    readonly Dictionary<string,string> dic_ = new Dictionary<string, string>();
 
+	    public Record()
+	    {
+	        
+	    }
 		internal Record (IEnumerable<KeyValuePair<string,string>> pairs)
 		{
 			foreach (KeyValuePair<string,string> pair in pairs) {

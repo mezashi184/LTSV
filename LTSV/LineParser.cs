@@ -5,11 +5,8 @@ namespace LTSV
 {
 	internal static class LineParser
 	{
-		public static Record Parse (string line)
-		{
-			return new Record(GetKeyValuePairs(line));
-		}
-		static IEnumerable<KeyValuePair<string,string>>GetKeyValuePairs(string line){
+        public static IEnumerable<KeyValuePair<string, string>> Parse(string line)
+        {
 			string[] fields = line.Split ('\t');
 			foreach (string field in fields) {
 				
@@ -34,7 +31,6 @@ namespace LTSV
 				}
 				yield return new KeyValuePair<string, string>(key,value);
 			}
-
 		}
 	}
 }
